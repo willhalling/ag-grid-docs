@@ -13,7 +13,7 @@ include('../includes/mediaHeader.php');
 
 <div class="row">
     <div class="col-md-12" style="padding-top: 20px; padding-bottom: 20px;">
-        <h1><img src="../images/react_large.png" width="80"/> React tutorial: using ag-Grid</h1>
+        <h1><img src="../images/react_large.png" width="80"/> React datagrid: using ag-Grid tutorial</h1>
     </div>
 </div>
 
@@ -22,17 +22,31 @@ include('../includes/mediaHeader.php');
 
         <h1>Intro</h1>
         <p>
-            In this blog post I am going to explain how to get a simple app up and running with React and ag-Grid.
-            Check out the demo to view the end result.
+            In this blog post, I am going to explain how to create a React datagrid with ag-Grid.
+            Check out the demo to view the end result. We will be working from a React boilerplate so
+            we can quickly get to work with building a JavaScript datagrid using ag-Grid.
         </p>
         <p>
             I am going to focus on a subject close to my heart: Leeds United football club. We will replicate the
-            functionality of the notable players table found on
+            features of the notable players table found on
             <a href="https://en.wikipedia.org/wiki/List_of_Leeds_United_F.C._players#Notable_players">Wikipedia</a>.
-            And we will utilise the ag-Grid filter so we can quickly filter players by keyword.
+            And add a new feature, <i>quick filtering</i>, so we can search by keyword.
         </p>
 
-        <p>This tutorial assumes you have at least a basic understanding of using ReactJS.</p>
+        <p>The following features will be included:</p>
+
+        <ul>
+            <li><strong>Cell Rendering</strong>- for the nationality flags</li>
+            <li><strong>Filtering</strong>- for columns</li>
+            <li><strong>Quick Filtering</strong>- to search by keyword</li>
+        </ul>
+
+        <p>This tutorial assumes you have at least, a basic understanding of ReactJS.</p>
+
+        <h2>Theme</h2>
+
+        <pre>&lt;div ag-grid="gridOptions" class="ag-blue"&gt;&lt;/div&gt;</pre>
+
 
         <!--
         <p>If you're looking for a JavaScript data grid for your React app, then look no further than ag-Grid.
